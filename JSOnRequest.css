@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background: white;
+  background-repeat: no-repeat;
+  font-family: Merriweather;
+}
+#container{
+  width: 80%;
+  margin: auto;
+}
+#header{
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+#usersDiv{
+  width: 90%;
+  margin: auto;
+}
+#ulTitle > li{
+  font-size: 16px;
+  font-style: oblique;
+}
+#inputHolder{
+  background: white;
+  display: block;
+  position: absolute;
+  right: 50px;
+  top : 75px;
+  font-size: 25px;
+  margin: 1em;
+  border : none;
+  border-bottom: 2px #1764a3 solid;
+}
+#inputHolder:focus {
+  outline: none;
+}
+button {
+  margin : 1em;
+  padding: 1em;
+  font-size: 16px;
+  border : 1px #1764a320 solid;
+  background: white;
+  font-family: Merriweather;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover{
+  background: #959abd20;
+}
+/*-----Ul and Li's----*/
+ul{
+  display: flex;
+
+  background: inherit;
+
+  border-bottom: 2px #1764a3 solid;
+
+  margin:1em;
+  padding: 1em;
+
+
+}
+li{
+  width: 175px;
+  list-style: none;
+}
+.ded_btn{
+  color: grey;
+  pointer-events: none;
+}
