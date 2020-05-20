@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Merriweather';
+
+  background: var(--background);
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+
+
+
+#container{
+  width: 100%;
+  margin: auto;
+}
+#section-one{
+  margin : 2em;
+  position: relative;
+  border-right: 2px var(--border-color) solid;
+  }
+/*====================*/
+/*====================*/
+/*item of the header column*/
+
+
+#header-col{
+  display: flex;
+  background: inherit;
+  border-bottom: 2px var(--border-color) solid;
+  margin:1em;
+  padding: 1em;
+
+}
+#header-col > li{
+  font-size: 16px;
+  font-style: oblique;
+
+}
+li{
+  width: 175px;
+  list-style: none;
+}
+#inputDiv{
+display:flex;
+}
+/*=======buttons + search bar =======*/
+      /*=======Search bar =======*/
+#inputHolder{
+  background: #fff;
+  display: block;
+  position: absolute;
+  right: 50px;
+  top : 10px;
+  font-size: 20px;
+  width :40%;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px var(--border-color) solid;
+  margin: 1em;
+  padding: .5em;
+}
+#inputHolder:focus {
+  outline:none;
+}
+button{
+  outline-color: var(--border-color);
+}
+      /*=======Buttons  =======*/
+button {
+  margin : 1em;
+  padding: 1em;
+  font-size: 18px;
+  font-family: 'Merriweather';
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: var(--button-color);
+  background: var(--button-background);
+
+}
+
+button:hover{
+  background: var(--button-hover-color);
+  color: #fff;
+  box-shadow: 0 0 25px var(--border-color);
+  transition: .25s;
+}
+/*greyed out buttons*/
+.ded_btn{
+  color: var(--button-dead-color);
+  pointer-events: none;
+}
+#btn{
+  position: relative;
+}
+#btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid var(--border-color);
+  border-left: 3px solid var(--border-color);
+  transition: .3s;
+}
+#btn::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+  transition: .3s;
+}
+
+#btn:hover::before{
+  width: 95%;
+  height: 95%;
+}
+#btn:hover::after{
+  width: 95%;
+  height: 95%;
+}
+#btn:hover{
+  background: var(--border-color);
+  color:var(--button-hover-color);
+  transition-delay: .3s;
+}
+#btn2{
+  position: relative;
+}
+#btn2::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+  transition: .3s;
+}
+#btn2::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 3px solid var(--border-color);
+  border-left: 3px solid var(--border-color);
+  transition: .3s;
+}
+
+#btn2:hover::before{
+  width: 95%;
+  height: 95%;
+}
+#btn2:hover::after{
+  width: 95%;
+  height: 95%;
+}
+#btn2:hover{
+  background: var(--border-color);
+  color:var(--button-hover-color);
+  transition-delay: .3s;
+}
+/*Theme dropdown window */
+.hidden{
+  opacity: 0;
+}
+/*users*/
+.userLi{
+  display: flex;
+  background: inherit;
+  border-bottom: 2px var(--border-color) solid;
+  margin:1em;
+  padding: 1em;
+  border: 1px #393939 solid;
+  border-radius: 12px;
+  transition: .3s;
+}
+.userLi:hover{
+    border: 2px #999 solid;
+}
+.zip{
+  color: var(--border-color);
+  opacity: 0;
+  transition: .3s;
+}
+.zip:hover{
+  opacity: 1;
+}
+
+
+.fas{
+  font-size: 25px;
+  padding: .75em;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.fa-tint{
+  color:#80c5de;
+}
+.fa-tint:hover{
+  background: #80c5de;
+  color: #fff;
+}
+.fa-fire-alt{
+  color: #FD5E53;
+}
+.fa-fire-alt:hover{
+  background: #FD5E53;
+  color: #fff;
+}
+.fa-leaf{
+  color:#72953f;
+}
+.fa-leaf:hover{
+  background:#72953f;
+  color: #fff;
+}
+.fa-sun{
+  color:var(--icon-color);
+}
+.fa-sun:hover{
+  background:var(--icon-color);
+  color:var(--icon-background);
+}
+.fa-moon{
+  color:var(--icon-color);
+}
+.fa-moon:hover{
+  background:var(--icon-color);
+  color:var(--icon-background);
+}
+
+
+:root{
+  --text-color : #212121;
+  --background #fff;
+  --border-color : #212121;
+
+}
+.water{
+
+    --border-color :#23adce;
+}
+.fire{
+
+  --border-color : #ff5037;
+}
+.leaf{
+
+  --border-color :#95B851;
+}
+.light{
+  --text-color : #212121;
+  --background #fff;
+
+  --border-color :#212121;
+
+  --button-background:#fff;
+  --button-hover-color:#fff;
+  --button-dead-color:#444;
+
+  --icon-color:#212121;
+  --icon-background :#fff;
+}
+.dark{
+  --text-color : #fff;
+  --background :#212121;
+
+  --border-color :#fff;
+
+  --button-background:#212121;
+  --button-hover-color:#212121;
+  --button-dead-color:#444;
+
+  --icon-color:#fff;
+  --icon-background :#212121;
+
+}
+
+@media only screen and (max-width: 800px) {
+  #container{
+    width: 100%;
+    margin : 1.5em;
+
+  }
+  #section-one{
+    width: 92%;
+    margin : 1.5em;
+  }
+}
